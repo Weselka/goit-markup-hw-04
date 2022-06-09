@@ -183,12 +183,15 @@ img {
 }
 
 .contact-link::before {
-    content: "icon";
+    display: inline-block;
+    content: "";
     width: 16px;
     height: 34px;
     margin-right: 10px;
     background-image: url(../images/smartphone.svg);
-    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*-------------------Герой-------------------------*/
