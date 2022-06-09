@@ -110,7 +110,7 @@ img {
     margin-right: 50px;
 }
 
-.feature-list .list:not(:last-child),
+.features-list .list:not(:last-child),
 .work-list .list:not(:last-child),
 .teams-list .list:not(:last-child) {
     margin-right: 30px;
@@ -241,12 +241,20 @@ img {
 
 /*----------------Секція Особливості---------------*/
 
-.feature-list {
+.features-list {
     display: flex;
 }
 
-.feature-list .list {
+.features-list .list {
     width: 270px;
+}
+
+.thumb {
+    height: 120px;
+    margin-right: inherit;
+    margin-bottom: 30px;
+
+    background-color: green;
 }
 
 .feature-title {
