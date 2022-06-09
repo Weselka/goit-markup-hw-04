@@ -182,6 +182,15 @@ img {
     letter-spacing: 0.02em;
 }
 
+.contact-link::before {
+    content: "icon";
+    width: 16px;
+    height: 34px;
+    margin-right: 10px;
+    background-image: url(../images/smartphone.svg);
+    
+}
+
 /*-------------------Герой-------------------------*/
 
 .hero {
