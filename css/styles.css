@@ -194,7 +194,7 @@ img {
 
 .overlay {
     max-width: 1600px;
-    height: 600px;
+    /* height: 600px; */
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -249,12 +249,16 @@ img {
     width: 270px;
 }
 
-.thumb {
+.thumb-antenna {
     height: 120px;
-    margin-right: inherit;
     margin-bottom: 30px;
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 
-    background-color: green;
+    background-color: #F5F4FA;
+
+    border-radius: 4px;
 }
 
 .feature-title {
