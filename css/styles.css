@@ -154,7 +154,7 @@ img {
 }
 
 .site-nav,
-.main-nav {
+.main-nav{
     display: flex;
 }
 
@@ -171,7 +171,7 @@ img {
 }
 
 .contact .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -182,17 +182,21 @@ img {
     letter-spacing: 0.02em;
 }
 
-.contact-link::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 34px;
-    margin-right: 10px;
-    background-image: url(../images/smartphone.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 10px;     */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+        
+    fill: currentColor;
 }
+
+.icon:hover {
+    fill: var(--accent-color);
+}
+
 
 /*-------------------Герой-------------------------*/
 
@@ -261,12 +265,13 @@ img {
     width: 270px;
 }
 
-.thumb-antenna {
+.feature-list .thumb-antenna {    
     height: 120px;
     margin-bottom: 30px;
-    background-image: url(../images/antenna.svg);
+    background-image: url(../images/symbol-features-defs.svg#icon-antenna);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     background-color: #F5F4FA;
 
