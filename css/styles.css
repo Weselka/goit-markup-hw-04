@@ -395,9 +395,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    /* margin-left: calc(-1 * var(--gallery-section-gap));
-    margin-top: calc(-1 * var(--gallery-section-gap)); */
 }
 
 .flex-elements.button {
