@@ -105,22 +105,18 @@ img {
     letter-spacing: 0.03em;
 }
 
-.site-nav .item:not(:last-child),
-.contact .item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .features-list .list:not(:last-child),
 .work-list .list:not(:last-child),
-.teams-list .list:not(:last-child) {
+.teams-list .list:not(:last-child),
+.contact .item:not(:last-child) {
     margin-right: 30px;
 }
 
 /*--------------Навігація по сайту--------------*/
 
 .logo-header {
-    min-width: 145px;
     display: block;
+    min-width: 145px;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
@@ -134,7 +130,13 @@ img {
 }
 
 .logo-up {
+    margin-bottom: 0;
     color: #000000;
+}
+
+.site-nav,
+.main-nav {
+    display: flex;
 }
 
 .site-nav .link {
@@ -149,13 +151,12 @@ img {
     letter-spacing: 0.02em;    
 }
 
-.site-nav .link.current {
-    color: var(--accent-color);
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
 }
 
-.site-nav,
-.main-nav{
-    display: flex;
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
 .page-header {
@@ -172,8 +173,10 @@ img {
 
 .contact .link {
     display: flex;
+    height: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
     
     color: var(--title-text-color);
     font-size: 14px;
@@ -182,19 +185,19 @@ img {
     letter-spacing: 0.02em;
 }
 
-.icon {
+.item {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-right: 10px;     */
-    /* margin-top: auto;
-    margin-bottom: auto; */
-        
+    
     fill: currentColor;
 }
 
-.icon:hover {
+.item:hover {
     fill: var(--accent-color);
+}
+.icon {
+    padding-right: 10px;
 }
 
 
@@ -210,7 +213,6 @@ img {
 
 .overlay {
     max-width: 1600px;
-    /* height: 600px; */
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -258,24 +260,21 @@ img {
 /*----------------Секція Особливості---------------*/
 
 .features-list {
-    display: flex;
+    display: flex;    
 }
 
 .features-list .list {
     width: 270px;
 }
 
-.feature-list .thumb-antenna {    
+.thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
-    margin-bottom: 30px;
-    background-image: url(../images/symbol-features-defs.svg#icon-antenna);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    margin-bottom: 30px;   
 
     background-color: #F5F4FA;
-
-    border-radius: 4px;
 }
 
 .feature-title {
@@ -343,12 +342,49 @@ img {
     font-weight: 500;    
 }
 
-.teams-expert {        
+.teams-expert {
+    margin-bottom: 16px;
+
     color: var(--title-text-color);
 }
 
 .teams-list {
     display: flex;
+}
+
+.teams-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.teams-soc-item {
+    width: 44px;
+    height: 44px;
+}
+.teams-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.teams-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    color: #AFB1B8;
+
+    border-radius: 50%;
+}
+
+.teams-soc-icon {
+    fill: currentColor;
+}
+
+.teams-soc-link:hover,
+.teams-soc-link:focus {
+    background-color: var(--accent-color);
+    color: var(--more-text-color);
 }
 
 /*--------Футер---------*/
