@@ -549,7 +549,7 @@ img {
     background-color: var(--accent-color);
 }
 
-/*------------Портфоліо-------------*/
+/*--------------------Портфоліо---------------------*/
 
 .gallery-btn {
     color: var(--primary-text-color);
@@ -618,4 +618,9 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;    
     color: var(--title-text-color);
+}
+
+.gallery .gallery-section:hover,
+.gallery .gallery-section:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
