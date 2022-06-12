@@ -41,12 +41,6 @@ img {
     text-decoration: none;
 }
 
-.btn:hover,
-.btn:focus {
-    background: #188CE8;
-    color: var(--more-text-color);    
-}
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -187,10 +181,11 @@ img {
 
 .contact .link {
     display: flex;
-    height: 100%;
-    padding-top: 31px;
-    padding-bottom: 31px;
     align-items: center;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     
     color: var(--title-text-color);
     font-size: 14px;
@@ -270,6 +265,15 @@ img {
 
     cursor: pointer;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #188CE8;
+    color: var(--more-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /*----------------Секція Особливості---------------*/
 
@@ -410,8 +414,6 @@ img {
 
     border: 1px solid var(--subgect-color);
     border-radius: 4px;
-
-    /* color: var(--subgect-color); */
 }
 
 .clients-item:not(:last-child) {
@@ -424,7 +426,6 @@ img {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
 
     color: var(--subgect-color);
 }
@@ -442,6 +443,8 @@ img {
 /*--------Футер---------*/
 
 .footer {
+    padding: 60px 0;
+    
     background-color: #2f303a;
 }
 
@@ -494,17 +497,11 @@ img {
 
 .footer-info {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-soc-info {
-    padding-top: 72px;    
-    padding-bottom: 100px;
-    padding-left: 70px;
-}
-
-.footer-site {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-left: 70px;
 }
 
 .footer-soc-item {
@@ -565,6 +562,13 @@ img {
     cursor: pointer;    
 }
 
+.btn:hover,
+.btn:focus {
+    background: #188CE8;
+    color: var(--more-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .flex-elements .button:not(:last-child) {
     margin-right: 9px;
 }
@@ -620,6 +624,7 @@ img {
     color: var(--title-text-color);
 }
 
-.gallery .gallery-section:hover {
+.gallery-section:hover,
+.gallery-section:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
